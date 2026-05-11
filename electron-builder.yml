@@ -1,0 +1,44 @@
+appId: com.melunai.app
+productName: Melunai
+
+directories:
+  buildResources: build
+  output: dist-package
+
+files:
+  - dist/**
+  - dist-electron/**
+  - build/icon.png
+  - package.json
+  - "!dist/mockup.html"
+  - "!dist/**/*.map"
+  - "!dist-electron/**/*.map"
+
+asar: true
+asarUnpack:
+  - "**/*.node"
+
+win:
+  signAndEditExecutable: false
+  target:
+    - target: nsis
+      arch: [x64]
+  artifactName: "${productName}-${version}-setup.${ext}"
+
+mac:
+  target:
+    - target: dmg
+      arch: [x64, arm64]
+  artifactName: "${productName}-${version}.${ext}"
+
+linux:
+  target:
+    - target: AppImage
+      arch: [x64]
+  artifactName: "${productName}-${version}.${ext}"
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true

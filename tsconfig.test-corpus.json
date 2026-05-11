@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist-test-corpus",
+    "noEmit": false,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src/corpus/corpusPrompt.ts",
+    "tests/unit/corpus/corpusPrompt.test.ts"
+  ]
+}
