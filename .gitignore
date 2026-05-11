@@ -53,7 +53,7 @@ $RECYCLE.BIN/
 
 # Electron / package outputs
 out/
-release/
+/release/
 *.exe
 *.dmg
 *.AppImage
