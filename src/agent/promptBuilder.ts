@@ -17,8 +17,7 @@ export interface BuiltPrompt {
 // ---------------------------------------------------------------------------
 
 /**
- * The system prompt encodes the full prompt contract from
- * docs/sdd/20_prompt_contract.md.
+ * The system prompt encodes the full local file-planning contract.
  *
  * It must include:
  *   - agent role

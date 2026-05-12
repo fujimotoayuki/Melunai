@@ -87,7 +87,7 @@ export type PlanResult =
 /**
  * Runs the full planning flow for a user instruction.
  *
- * Flow (per docs/sdd/03_system_architecture.md):
+ * Flow:
  *   User instruction
  *   -> Context Builder
  *   -> Prompt Builder

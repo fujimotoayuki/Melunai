@@ -47,7 +47,7 @@ const DEFAULT_MAX_ENTRIES = 100;
 /**
  * Builds a minimal workspace context for the Prompt Builder.
  *
- * Follows the context priority from docs/sdd/05_agent_behavior.md:
+ * Follows the product's context priority:
  *   1. File names and extensions
  *   2. File sizes
  *   3. (Cached summaries — not implemented in MVP)
